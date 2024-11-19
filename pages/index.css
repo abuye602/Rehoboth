@@ -1,7 +1,7 @@
-@import url("/blocks/home.css");
-@import url("/blocks/about.css");
-@import url("/blocks/mission.css");
-@import url("/blocks/contact.css");
+@import url("../blocks/home.css");
+@import url("../blocks/about.css");
+@import url("../blocks/mission.css");
+@import url("../blocks/contact.css");
 
 * {
   margin: 0;
