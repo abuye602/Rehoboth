@@ -1,0 +1,139 @@
+@import url("/blocks/home.css");
+@import url("/blocks/about.css");
+@import url("/blocks/mission.css");
+@import url("/blocks/contact.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  width: 100vw;
+}
+
+body {
+  font-family: "Poppins";
+}
+
+ul,
+ul.nav {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+}
+
+.logo {
+  height: 80px;
+  width: 80px;
+  opacity: 0.6;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-weight: 200;
+  padding: 35px 20px;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 13%;
+}
+
+header ul.nav {
+  display: flex;
+  padding-right: 50px;
+}
+
+header ul.nav li {
+  display: flex;
+  margin: 0 30px;
+  align-items: center;
+}
+
+/* Basic link styling */
+.nav li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+  padding-bottom: 5px; /* Adds spacing for the hover line */
+  position: relative; /* Necessary for the hover underline */
+}
+
+/* Hover effect - changes color and adds an underline */
+.nav li a:hover {
+  color: #ca9e81;
+}
+
+/* Optional: Add a line under the link on hover using ::after */
+.nav li a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #a3826c; /* Color of the hover underline */
+  bottom: -2px; /* Position the line just below the text */
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+/* Expand the underline on hover */
+.nav li a:hover::after {
+  width: 100%; /* Full width of the link */
+}
+
+/* Active state - this applies to the current page */
+.nav li a.active {
+  color: #caa084;
+}
+
+/* Ensure the underline stays on the active link */
+.nav li a.active::after {
+  content: "";
+  position: absolute;
+  width: 100%; /* Full width for the active link */
+  height: 2px;
+  background-color: #a3826c; /* Color of the underline */
+  bottom: -2px; /* Position the line just below the text */
+  left: 0;
+}
+
+.banner-img {
+  position: absolute;
+  top: -20%;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  background-size: cover;
+  background-position: center top;
+}
+
+.banner-img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0) 50%
+  );
+}
+
+.about-title {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 50px;
+}

@@ -1,0 +1,76 @@
+.about-header,
+#about-area,
+.mission-area,
+.content-area {
+  background-color: #3e3d3d;
+  color: white;
+}
+
+#about-area {
+  padding: 20px 40px 0;
+}
+
+.about-content h4,
+.about-content p {
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.mission-area {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-top: 7rem;
+}
+
+.mission-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.mission-content img {
+  height: 27rem;
+  width: 40rem;
+  object-fit: cover;
+  border-radius: 410px;
+}
+
+.mission-img_1 .about-content {
+  width: 45%;
+}
+
+.mission-img_2 {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.mission-img_2 .about-content {
+  text-align: right;
+  width: 45%;
+}
+
+.mission-img_3 div {
+  width: 45%;
+}
+
+.mission-content li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mission-content div {
+  padding-top: 50px;
+}
+
+.mission-area h4 {
+  font-size: 40px;
+  font-weight: 500;
+  padding-bottom: 25px;
+}
+
+.mission-area p {
+  font-weight: 200;
+}
